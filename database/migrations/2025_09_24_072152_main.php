@@ -23,7 +23,7 @@ return new class extends Migration
         //! Laporan
         Schema::create('laporan', function (Blueprint $table) {
             $table->id('id_laporan');
-            $table->foreignId('id_user')->constrained('users')->cascadeOnDelete();
+            $table->foreignId('id_user')->constrained('users', 'id_user')->cascadeOnDelete();
             $table->string('judul_laporan');
             $table->string('kategori_laporan');
             $table->string('lokasi');
@@ -36,7 +36,7 @@ return new class extends Migration
         //! Postingan
         Schema::create('postingan', function (Blueprint $table) {
             $table->id('id_postingan');
-            $table->foreignId('id_user')->constrained('users')->cascadeOnDelete();
+            $table->foreignId('id_user')->constrained('users', 'id_user')->cascadeOnDelete();
             $table->string('judul_postingan');
             $table->string('foto')->nullable();
             $table->text('deskripsi_postingan')->nullable();
@@ -56,7 +56,7 @@ return new class extends Migration
         //! Voting
         Schema::create('voting', function (Blueprint $table) {
             $table->id('id_voting');
-            $table->foreignId('id_user')->constrained('users')->cascadeOnDelete();
+            $table->foreignId('id_user')->constrained('users', 'id_user')->cascadeOnDelete();
             $table->string('judul_voting');
             $table->enum('isi_voting', ['setuju', 'tidak_setuju']);
             $table->timestamps();
@@ -65,8 +65,8 @@ return new class extends Migration
         //! Komentar
         Schema::create('komentar', function (Blueprint $table) {
             $table->id('id_komentar');
-            $table->foreignId('id_user')->constrained('users')->cascadeOnDelete();
-            $table->foreignId('id_postingan')->constrained('postingan')->cascadeOnDelete();
+            $table->foreignId('id_user')->constrained('users', 'id_user')->cascadeOnDelete();
+            $table->foreignId('id_postingan')->constrained('postingan', 'id_postingan')->cascadeOnDelete();
             $table->text('pesan');
             $table->timestamps();
         });
