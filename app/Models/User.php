@@ -1,48 +1,33 @@
 <?php
-
+// app/Models/User.php
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Str;
 use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    public $incrementing = false;
+    protected $keyType = 'string';
+    protected $fillable = ['name', 'email', 'password_hash', 'role'];
+    public $timestamps = true; 
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var list<string>
-     */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
-
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
+    protected static function booted()
     {
-        return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
-        ];
+        static::creating(function ($user) {
+            $user->id = (string) Str::uuid();
+        });
     }
+
+    // 🔗 Relations
+    public function posts()     { return $this->hasMany(Post::class); }
+    public function comments()  { return $this->hasMany(Comment::class); }
+    public function reports()   { return $this->hasMany(Report::class); }
+    public function events()    { return $this->hasMany(Event::class, 'created_by'); }
+    public function polls()     { return $this->hasMany(Poll::class, 'created_by'); }
+    public function votes()     { return $this->hasMany(Vote::class); }
 }
