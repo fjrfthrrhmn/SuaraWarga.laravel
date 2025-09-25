@@ -14,6 +14,7 @@ class User extends Authenticatable
     public $incrementing = false;
     protected $keyType = 'string';
     protected $fillable = ['name', 'email', 'password_hash', 'role'];
+    public $timestamps = true; 
 
     protected static function booted()
     {

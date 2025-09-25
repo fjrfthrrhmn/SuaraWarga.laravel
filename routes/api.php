@@ -5,6 +5,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 Route::get('/posts', function () {
     return [
@@ -13,6 +14,5 @@ Route::get('/posts', function () {
     ];
 });
 
-Route::get('/user', function (Request $request) {
-    return $request->user(); // kalau sudah pakai sanctum/token
-});
+
+Route::get('/users', [UserController::class, 'index']);
