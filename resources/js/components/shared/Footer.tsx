@@ -33,7 +33,7 @@ const sections = [
 export const Footer = () => {
   return (
     <>
-      <div className="flex flex-col gap-4 max-w-2xl mx-auto mt-20">
+      <div className="flex flex-col gap-4 max-w-2xl mx-auto pt-10 border-t-2 border-dashed">
         <Typography.Title variant="4/bold">SuaraWarga</Typography.Title>
         <Typography.Text variant="sm/normal">
           Platform digital untuk pelaporan, diskusi, voting pembangunan, dan informasi kegiatan warga. 

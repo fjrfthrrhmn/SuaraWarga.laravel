@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 
 export const AgendaCard = ({ ...props }: AgendaType) => {
     const { title, date, description, imageUrl, location, status } = props
-    const formattedDate = format(date, "EEE dd MMM yyyy", { locale: id })
+    const formattedDate = format(date, "EEE dd MMM", { locale: id })
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -84,7 +84,7 @@ export const PollingCard = ({ ...props }: PollingType) => {
 
 export const PostCard = ({ ...props }: PostType) => {
     const { imageUrl, content, date, summary, title, author } = props
-    const formattedDate = format(date, "EEE dd MMM yyyy", { locale: id })
+    const formattedDate = format(date, "EEE dd MMM", { locale: id })
 
     const [isOpen, setIsOpen] = useState(false)
 
