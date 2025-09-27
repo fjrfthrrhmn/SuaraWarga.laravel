@@ -1,6 +1,6 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "suarawarga/app",
+    "name": "SuaraWarga",
     "type": "project",
     "description": "A Clean Laravel + Inertia + React + Shadcn Starter Kit",
     "keywords": [
