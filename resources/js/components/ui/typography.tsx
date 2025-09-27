@@ -117,5 +117,4 @@ const TextStyles = cva(
 Title.displayName = "Title"
 Text.displayName = "Text"
 
-const Typography = { Title, Text }
-export default Typography
+export const Typography = { Title, Text }

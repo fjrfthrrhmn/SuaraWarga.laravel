@@ -1,8 +1,6 @@
 import { AgendaList } from "@/components/content/AgendaList";
 import { LayoutApp } from "@/components/shared";
-import { Button } from "@/components/ui/button";
-import { Headline } from "@/components/ui/Headline";
-import { GradientOverlay } from "@/components/ui/overlay";
+import { Headline, Button } from "@/components/ui";
 import { Head } from "@inertiajs/react";
 import { FileText, CheckSquare } from "lucide-react";
 
@@ -22,7 +20,7 @@ export default function Home() {
                             text="Suara Kamu Masa, Depan Kami"
                             description="Laporkan masalah, ikuti kegiatan dan bersama wujudkan lingkungan yang lebih baik"
                         >
-                            <div className="w-full flex flex-col sm:flex-row gap-2">
+                            <div className="*:flex-1 w-full flex flex-col sm:flex-row gap-2">
                                 <Button>
                                     <FileText />
                                     Laporkan

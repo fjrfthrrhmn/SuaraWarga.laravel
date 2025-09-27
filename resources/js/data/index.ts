@@ -17,7 +17,7 @@ export const AGENDA: AgendaType[] = [
     time: "19:00",
     location: "Balai RW 05",
     description: "Sesi town-hall untuk mendengarkan aspirasi warga, tanya jawab, dan penetapan agenda kerja RT/RW.",
-    imageUrl: "https://i.pinimg.com/736x/f1/02/5e/f1025ea879b0b3ef63ee8ced3e5bc8fc.jpg"
+    imageUrl: "https://i.pinimg.com/736x/d1/b3/7f/d1b37fd2ff9c5693fd968310de8e932f.jpg"
   },
   {
     id: "agenda-002",
@@ -26,6 +26,15 @@ export const AGENDA: AgendaType[] = [
     time: "08:00",
     location: "Lapangan RW 05",
     description: "Gotong royong bersih-bersih area publik, edukasi pengelolaan sampah, pembagian jadwal piket.",
-    imageUrl: "https://i.pinimg.com/736x/70/c5/36/70c5364662d2b2d109670a3c18e5815e.jpg"
+    imageUrl: "https://i.pinimg.com/1200x/36/91/43/369143893733ef6dbdbf6d03466297b8.jpg"
+  },
+  {
+    id: "agenda-003",
+    title: "Family Fun Day — Sosialisasi SuaraWarga",
+    date: "2025-10-19",
+    time: "10:00",
+    location: "Taman Kelurahan",
+    description: "Event keluarga: booth registrasi SuaraWarga, demo pelaporan, games edukatif untuk anak.",
+    imageUrl: "https://i.pinimg.com/736x/c0/79/3d/c0793d7adfc77c66f335e859673f3df2.jpg"
   },
 ];

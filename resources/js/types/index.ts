@@ -1,4 +1,4 @@
-type AgendaType = {
+export type AgendaType = {
     image: string;
     title: string;
     description: string;

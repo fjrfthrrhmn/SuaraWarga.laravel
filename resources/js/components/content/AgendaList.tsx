@@ -1,7 +1,7 @@
 import { AGENDA } from "@/data"
-import { AgendaCard } from "../widgets/card"
-import Typography from "../ui/typography"
+import { AgendaCard } from "@/components/widgets"
 import { Link } from "@inertiajs/react"
+import { Typography } from "@/components/ui"
 
 export const AgendaList = () => {
     return (

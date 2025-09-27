@@ -1,10 +1,8 @@
 import { format } from 'date-fns'
 import { id } from 'date-fns/locale'
-import Typography from '../ui/typography'
-import { Button } from '../ui/button'
-import { IconMenuDeep, IconBell, IconMoon } from '@tabler/icons-react'
+import { Button, AnimatedThemeToggler, Typography } from '@/components/ui'
+import { IconMenuDeep, IconBell } from '@tabler/icons-react'
 import { useState } from 'react'
-import { AnimatedThemeToggler } from '../ui/theme-toggler'
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState();

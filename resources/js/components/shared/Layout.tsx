@@ -8,7 +8,7 @@ interface LayoutAppProps {
 export const LayoutApp = ({ children }: LayoutAppProps) => {
     return (
         <>
-            <main className="container mx-auto h-dvh px-4 sm:px-6 relative z-10 sm:border-x border-border">
+            <main className="container mx-auto h-full px-4 sm:px-6 relative z-10 sm:border-x-2 border-border border-dashed">
                 <Header />
                 {children}
                 <Footer />
