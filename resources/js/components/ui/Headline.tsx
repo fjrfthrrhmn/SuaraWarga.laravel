@@ -15,7 +15,7 @@ export const Headline = ({ ...props }: HeadlineProps) => {
 
     return (
         <>
-            <div className='space-y-4 py-12'>
+            <div className='space-y-4 py-8'>
                 <div className="space-y-2">
                     <Typography.Text variant='sm/normal'>{span}</Typography.Text>
 

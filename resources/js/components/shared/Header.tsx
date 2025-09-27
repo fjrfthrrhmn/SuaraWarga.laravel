@@ -9,7 +9,7 @@ export const Header = () => {
     const today = format(new Date(), "EEE dd MMM yyyy", { locale: id })
 
     return (
-        <div className="w-full py-6">
+        <div className="w-full py-6 border-b-2 border-dashed">
             <div className="flex justify-between items-center">
                 <Typography.Text variant="xs/normal">
                     Hari ini, <br className='sm:hidden' /> {today}
