@@ -1,8 +1,8 @@
-import { PostList, AgendaList, PollingList, Spotlights } from "@/components/content";
-import { LayoutApp } from "@/components/shared";
-import { Headline, Button } from "@/components/ui";
-import { Head } from "@inertiajs/react";
-import { FileText, CheckSquare } from "lucide-react";
+import { AgendaList, PollingList, PostList, Spotlights } from '@/components/content';
+import { LayoutApp } from '@/components/shared';
+import { Button, Headline } from '@/components/ui';
+import { Head } from '@inertiajs/react';
+import { CheckSquare, FileText } from 'lucide-react';
 
 export default function Home() {
     return (
@@ -13,13 +13,13 @@ export default function Home() {
                 {/* <GradientOverlay className="opacity-60 dark:opacity-40" /> */}
                 {/* <DotPattern /> */}
 
-                <LayoutApp className="space-y-12 relative z-10">
+                <LayoutApp className="relative z-10 space-y-12">
                     <Headline
                         span="Hallo, Warga!"
                         text="Suara Kamu Masa, Depan Kami"
                         description="Laporkan masalah, ikuti kegiatan dan bersama wujudkan lingkungan yang lebih baik"
                     >
-                        <div className="*:flex-1 w-full flex flex-col sm:flex-row gap-2">
+                        <div className="flex w-full flex-col gap-2 *:flex-1 sm:flex-row">
                             <Button>
                                 <FileText />
                                 Laporkan
@@ -39,5 +39,5 @@ export default function Home() {
                 </LayoutApp>
             </div>
         </>
-    )
+    );
 }

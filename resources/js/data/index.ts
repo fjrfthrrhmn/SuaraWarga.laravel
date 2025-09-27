@@ -129,48 +129,49 @@ export const POLLING: PollingType[] = [
     },
 ];
 
-
 export interface UserType {
-  id: string
-  name: string
-  avatarUrl: string
+    id: string;
+    name: string;
+    avatarUrl: string;
 }
 
 export interface PostType {
-  id: string
-  title: string
-  summary: string
-  content: string
-  author: UserType
-  date: string // ISO date
-  imageUrl?: string
+    id: string;
+    title: string;
+    summary: string;
+    content: string;
+    author: UserType;
+    date: string; // ISO date
+    imageUrl?: string;
 }
 
 export const POSTS: PostType[] = [
-  {
-    id: "post-001",
-    title: "Turnamen Basket RW 05",
-    summary: "Ikuti turnamen basket seru untuk warga RW 05!",
-    content: "RW 05 menyelenggarakan turnamen basket antar RT. Semua warga dipersilakan ikut serta baik sebagai pemain maupun penonton. Hadiah menarik menanti pemenang. Ayo tunjukkan kemampuanmu di lapangan dan tingkatkan sportivitas komunitas!",
-    author: {
-      id: "user-001",
-      name: "Admin RW 05",
-      avatarUrl: "https://i.pravatar.cc/150?img=32"
+    {
+        id: 'post-001',
+        title: 'Turnamen Basket RW 05',
+        summary: 'Ikuti turnamen basket seru untuk warga RW 05!',
+        content:
+            'RW 05 menyelenggarakan turnamen basket antar RT. Semua warga dipersilakan ikut serta baik sebagai pemain maupun penonton. Hadiah menarik menanti pemenang. Ayo tunjukkan kemampuanmu di lapangan dan tingkatkan sportivitas komunitas!',
+        author: {
+            id: 'user-001',
+            name: 'Admin RW 05',
+            avatarUrl: 'https://i.pravatar.cc/150?img=32',
+        },
+        date: '2025-09-20',
+        imageUrl: 'https://i.pinimg.com/736x/bd/7c/7f/bd7c7f7f054ab64ae948b901ad1a8995.jpg',
     },
-    date: "2025-09-20",
-    imageUrl: "https://i.pinimg.com/736x/bd/7c/7f/bd7c7f7f054ab64ae948b901ad1a8995.jpg", 
-  },
-  {
-    id: "post-002",
-    title: "Informasi Hari Buruh 2025",
-    summary: "RW 05 memperingati Hari Buruh dengan kegiatan sosial.",
-    content: "Dalam rangka memperingati Hari Buruh 1 Mei 2025, RW 05 mengajak semua warga untuk ikut serta dalam kegiatan bakti sosial dan penghargaan bagi pekerja berprestasi di lingkungan kita. Mari merayakan Hari Buruh dengan semangat gotong royong dan kepedulian.",
-    author: {
-      id: "user-002",
-      name: "Sekretaris RW 05",
-      avatarUrl: "https://i.pravatar.cc/150?img=12"
+    {
+        id: 'post-002',
+        title: 'Informasi Hari Buruh 2025',
+        summary: 'RW 05 memperingati Hari Buruh dengan kegiatan sosial.',
+        content:
+            'Dalam rangka memperingati Hari Buruh 1 Mei 2025, RW 05 mengajak semua warga untuk ikut serta dalam kegiatan bakti sosial dan penghargaan bagi pekerja berprestasi di lingkungan kita. Mari merayakan Hari Buruh dengan semangat gotong royong dan kepedulian.',
+        author: {
+            id: 'user-002',
+            name: 'Sekretaris RW 05',
+            avatarUrl: 'https://i.pravatar.cc/150?img=12',
+        },
+        date: '2025-05-01',
+        imageUrl: 'https://i.pinimg.com/736x/76/80/66/76806653b939ec5120db8cb076f1c450.jpg',
     },
-    date: "2025-05-01",
-    imageUrl: "https://i.pinimg.com/736x/76/80/66/76806653b939ec5120db8cb076f1c450.jpg", 
-  }
-]
+];
