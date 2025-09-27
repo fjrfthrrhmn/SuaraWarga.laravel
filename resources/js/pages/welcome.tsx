@@ -1,8 +1,11 @@
+import { AgendaList } from "@/components/content/AgendaList";
 import { LayoutApp } from "@/components/shared";
 import { Button } from "@/components/ui/button";
 import { Headline } from "@/components/ui/Headline";
 import { GradientOverlay } from "@/components/ui/overlay";
 import { Head } from "@inertiajs/react";
+import { FileText, CheckSquare } from "lucide-react";
+
 
 export default function Home() {
     return (
@@ -10,20 +13,30 @@ export default function Home() {
             <Head title="Beranda" />
 
             <div className="relative">
-                <GradientOverlay />
+                {/* <GradientOverlay className="opacity-60 dark:opacity-40" /> */}
 
                 <LayoutApp>
-                    <div className="space-y-20 relative z-10">
+                    <div className="space-y-10 relative z-10">
                         <Headline
+                            span="Hallo, Warga!"
                             text="Suara Kamu Masa, Depan Kami"
                             description="Laporkan masalah, ikuti kegiatan dan bersama wujudkan lingkungan yang lebih baik"
-                            span="Hallo, Warga!"
                         >
                             <div className="w-full flex flex-col sm:flex-row gap-2">
-                                <Button>Laporkan</Button>
-                                <Button variant="outline">Ikut Voting</Button>
+                                <Button>
+                                    <FileText />
+                                    Laporkan
+                                </Button>
+                                <Button variant="outline">
+                                    <CheckSquare />
+                                    Ikut Voting
+                                </Button>
                             </div>
                         </Headline>
+
+                        {/* Content is here... */}
+
+                        <AgendaList />
                     </div>
                 </LayoutApp>
             </div>

@@ -15,9 +15,9 @@ export const Headline = ({ ...props }: HeadlineProps) => {
 
     return (
         <>
-            <div className='space-y-4 py-10'>
+            <div className='space-y-4 py-12'>
                 <div className="space-y-2">
-                    <Typography.Text variant='xs/normal'>{span}</Typography.Text>
+                    <Typography.Text variant='sm/normal'>{span}</Typography.Text>
 
                     <Typography.Title variant='2/extrabold'>
                         {parts.map((part, idx) => (
