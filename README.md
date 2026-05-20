@@ -10,14 +10,6 @@ A minimalist Laravel starter kit with Inertia.js, React, and Shadcn UI, providin
 - Node.js 18+ (LTS version recommended)
 - Composer
 
-## Installation
-
-Create a new project using Laravel's installer:
-
-```bash
-laravel new --using=ldriko/laravel-clean-react
-```
-
 Once installed, you'll have a clean Laravel project with React, Inertia.js, and Shadcn UI configured and ready to use—without any of the default authentication scaffolding or demo pages that come with the standard Laravel starter kit.
 
 ## Contributing
